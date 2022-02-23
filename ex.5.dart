@@ -1,18 +1,40 @@
 import 'dart:io';
 void main(){
   print("Digite um número");
-  int n1 = int.parse(stdin.readLineSync()!);
+  num n1 = num.parse(stdin.readLineSync()!);
 
   print("Digite outro número");
-  int n2 = int.parse(stdin.readLineSync()!);
+  num n2 = num.parse(stdin.readLineSync()!);
+
+  print("Escolha a operação");
 
   String op = stdin.readLineSync()!;
 
  switch(op) {
   
-  case '+':
+  case "+":
 
-  num res = 
+    num res = n1-n2;
+    print("Total: $res");
+    break;
+
+  case "-":
+    num res = n1-n2;
+    print("Total: $res");
+    break;
+
+  case "*":
+    num res = n1*n2;
+    print("Total: $res");
+    break;
+
+  case "/":
+    num res = n1/n2;
+    print("Total: $res");
+    break;
+
+  default:
+    print("Operação Inválida");
 
   }
 
